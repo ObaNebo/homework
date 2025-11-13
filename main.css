@@ -1,5 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /* хедер */
 .header {
+    position: fixed; /*почему то перекрывает <div><h1>KONTENT</h1></div>*/
+    position: sticky;
+    top: 0;
+    width: 100%;
     width: 100%;
     height: 74px;
     display: flex;
@@ -37,4 +46,10 @@
     border: none;
     border-radius: 20px;
     cursor: pointer;
+}
+/* контент */
+.div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
